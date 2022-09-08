@@ -1,0 +1,14 @@
+package com.antoniocostadossantos.desafioandroid.model
+
+import com.google.gson.annotations.SerializedName
+
+data class Owner(
+    @SerializedName("avatar_url")
+    val avatar_url: String?,
+
+    @SerializedName("html_url")
+    val html_url: String?,
+
+    @SerializedName("login")
+    val login: String?
+)

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/itemRepository"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivFotoPerfil"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNomeRepositorio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Nome Repositório"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/tvNomeUsuario"
+        app:layout_constraintStart_toEndOf="@id/ivFotoPerfil"
+        app:layout_constraintTop_toTopOf="@id/ivFotoPerfil" />
+
+    <TextView
+        android:id="@+id/tvNomeUsuario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Nome usuário"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/tvEstrelas"
+        app:layout_constraintStart_toEndOf="@id/ivFotoPerfil"
+        app:layout_constraintTop_toBottomOf="@id/tvNomeRepositorio" />
+
+    <TextView
+        android:id="@+id/tvEstrelas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Estrelas"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/tvForks"
+        app:layout_constraintStart_toEndOf="@id/ivFotoPerfil"
+        app:layout_constraintTop_toBottomOf="@id/tvNomeUsuario" />
+
+    <TextView
+        android:id="@+id/tvForks"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Forks"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/ivFotoPerfil"
+        app:layout_constraintStart_toEndOf="@id/ivFotoPerfil"
+        app:layout_constraintTop_toBottomOf="@id/tvEstrelas" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
