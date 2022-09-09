@@ -22,7 +22,6 @@ class MainActivity : AppCompatActivity() {
 
         setupRecyclerView()
         setupObserver()
-
     }
 
     private fun setupObserver() {

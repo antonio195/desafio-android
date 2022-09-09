@@ -16,7 +16,7 @@ class UserRepository() : BaseRepository() {
         pageNumber: Int,
         listener: APIListener<Items>,
     ) {
-        remote.getRepositories("java", pageNumber)
+        remote.getRepositories("kotlin", pageNumber)
             .enqueue(object : Callback<Items> {
                 override fun onResponse(call: Call<Items>, response: Response<Items>) {
                     handleResponse(response, listener)
